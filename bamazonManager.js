@@ -152,7 +152,6 @@ function addItem(name, department, price, quantity){
         ,
         (err, data) => {
             if (err) throw err;
-            console.log(data)
             console.log("Item Added!");            
             anythingElse();
         }
