@@ -4,7 +4,7 @@ CREATE database productsDB;
 USE productsDB;
 
 CREATE TABLE products (
-  item_id INT(50) AUTO_INCREMENT NOT NULL,
+  item_id INT(50) AUTO_INCREMENT,
   product_name VARCHAR(100),
   department_name VARCHAR(100),
   price DECIMAL(8,2),
@@ -35,3 +35,5 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Camera", "Electronics", 200, 20);
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("T Shirt", "Clothing", 8, 100);
+
+SELECT item_id, product_name, price FROM products
